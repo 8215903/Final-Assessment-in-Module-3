@@ -1,0 +1,31 @@
+// Rhobert Angelo S. Mico
+// 2.5 BSIT
+let collectionNFT = [];
+
+function mintNFT(_title, _inventor, _jobs, _salary) {
+    const programming = {
+        title: _title,
+        inventor: _inventor,
+        jobs: _jobs,
+        salary: _salary,
+    }
+    collectionNFT.push(programming);
+}
+
+function listNFTs() {
+    for(let i = 0; i < collectionNFT.length; i++)  {
+        console.log(collectionNFT[i]);          
+    }
+}
+
+function getTotalSupply () {
+    console.log("TOTAL NFT: " + collectionNFT.length);
+}
+
+mintNFT("Python", "Guido van Rossum", "19,000", "$120 000");
+mintNFT("JavaScript", "James Gosling", "24,000", "$118 000");
+mintNFT("Java" , "James Gosling", "29,000", "$97,000");
+
+listNFTs();
+
+getTotalSupply()
